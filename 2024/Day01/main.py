@@ -1,9 +1,8 @@
-file = open("input.txt", "r")
-
 # Part One
 
-lefts = []
-rights = []
+file = open("input.txt", "r")
+
+lefts, rights = [], []
 for line in file:
     space = line.find(" ")
     lefts.append(int(line[:space]))
