@@ -1,4 +1,5 @@
 # Part One
+# https://adventofcode.com/2024/day/2
 
 # Check if two integers are increasing relative to each other
 def increasing(level_a: int, level_b: int) -> bool:

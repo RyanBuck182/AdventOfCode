@@ -1,4 +1,5 @@
 # Part One
+# https://adventofcode.com/2024/day/1
 
 file = open("input.txt", "r")
 
@@ -18,6 +19,7 @@ for i in range(len(lefts)):
 print(total)
 
 # Part Two
+# https://adventofcode.com/2024/day/1#part2
 
 occurrences = {}
 for num in rights:
