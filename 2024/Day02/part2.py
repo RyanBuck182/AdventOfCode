@@ -62,5 +62,6 @@ safe_report_count = 0
 for line in file:
     if is_report_safe([int(x) for x in line.split()]):
         safe_report_count += 1
+file.close()
 
 print(safe_report_count)

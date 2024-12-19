@@ -8,6 +8,7 @@ for line in file:
     space = line.find(" ")
     lefts.append(int(line[:space]))
     rights.append(int(line[space:]))
+file.close()
 
 lefts.sort()
 rights.sort()

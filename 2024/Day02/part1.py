@@ -36,5 +36,6 @@ for line in file:
 
     if report_is_safe:
         safe_report_count += 1
+file.close()
 
 print(safe_report_count)

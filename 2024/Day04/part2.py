@@ -3,8 +3,8 @@ from re import findall, DOTALL
 # Part Two
 # https://adventofcode.com/2024/day/4#part2
 
-file = open("input.txt", "r")
-text = file.read()
+with open("input.txt", "r") as file:
+    text = file.read()
 
 
 def match_count(regex: str) -> int:

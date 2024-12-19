@@ -3,8 +3,8 @@ from re import findall
 # Part Two
 # https://adventofcode.com/2024/day/3#part2
 
-file = open("input.txt", "r")
-text = file.read()
+with open("input.txt", "r") as file:
+    text = file.read()
 
 instructions = findall(r"mul\((\d+),(\d+)\)|(do|don't)\(\)", text)
 

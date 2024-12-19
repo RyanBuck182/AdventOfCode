@@ -3,8 +3,8 @@ from re import findall
 # Part One
 # https://adventofcode.com/2024/day/3
 
-file = open("input.txt", "r")
-text = file.read()
+with open("input.txt", "r") as file:
+    text = file.read()
 
 multiplications = findall(r"mul\((\d+),(\d+)\)", text)
 
