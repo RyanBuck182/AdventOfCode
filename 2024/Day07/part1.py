@@ -5,11 +5,11 @@ with open("input.txt") as file:
     text = file.read()
 
 operations = [lambda x, y: x + y, lambda x, y: x * y]
-lines = text.split("\n")
+equations = text.split("\n")
 
 total_calibration_result = 0
-for line in lines:
-    parts = line.split(" ")
+for equation in equations:
+    parts = equation.split(" ")
     test_value = int(parts[0][:-1])
     terms = [int(term) for term in parts[1:]]
 

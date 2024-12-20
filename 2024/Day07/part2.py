@@ -6,13 +6,13 @@ with open("input.txt") as file:
 
 pt1_operations = [lambda x, y: x + y, lambda x, y: x * y]
 pt2_operations = [*pt1_operations, lambda x, y: int(str(x) + str(y))]
-lines = text.split("\n")
+equations = text.split("\n")
 
 
 def calculate_calibration(operations: list) -> int:
     total_calibration_result = 0
-    for line in lines:
-        parts = line.split(" ")
+    for equation in equations:
+        parts = equation.split(" ")
         test_value = int(parts[0][:-1])
         terms = [int(term) for term in parts[1:]]
 
