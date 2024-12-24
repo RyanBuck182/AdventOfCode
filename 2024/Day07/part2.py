@@ -25,6 +25,7 @@ def calculate_calibration(operations: list) -> int:
                     result = operation(current_total, terms[term_index])
                     if test_equation(result, term_index + 1):
                         valid = True
+                        break
                 return valid
 
         if test_equation():
