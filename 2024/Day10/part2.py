@@ -28,7 +28,7 @@ def get_valid_cardinal_neighbors(position: int) -> list[int]:
     return [neighbor for neighbor in get_cardinal_neighbors(position) if in_bounds(neighbor)]
 
 
-# Breadth-first search finding all trails that can reach summits starting from the trailhead
+# Breadth-first search counting all trails that can reach summits starting from the trailhead
 def get_trailhead_rating(trailhead: int) -> int:
     total_summits = 0
     frontier = Queue()
